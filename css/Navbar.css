@@ -1,0 +1,25 @@
+/* Estilos para dropdowns anidados */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+/* Para móviles, mostrar los submenús debajo */
+@media (max-width: 991px) {
+    .dropdown-submenu .dropdown-menu {
+        position: static;
+        left: 0;
+        margin-left: 1rem;
+    }
+}
+
+.dropdown-submenu>a::after {
+    content: "›";
+    float: right;
+    margin-left: 10px;
+}
